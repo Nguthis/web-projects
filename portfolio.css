@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 /* Reset some default styles for consistency */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -6,12 +7,16 @@ body, h1, h2, h3, p, ul, li {
 
 /* Set a background color and text color for the entire page */
 body {
-    background-color: #e7e0e0;
     color: #26293c;
-    font-family: Arial, sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2rem;
     line-height: 1.6;
+    color: white;
     margin: 0;
     padding: 0;
+    background:linear-gradient(#000428 ,#004e92) ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Style the header */
@@ -34,6 +39,21 @@ nav ul {
     background-color: #333;
     padding: 0.5rem 0;
 }
+.navbar{
+    background: linear-gradient(#141e30 ,#243b55);
+    width: 100%;
+    margin-bottom: 20px;
+}
+.navhead{
+    color: #9cc2d1;
+}
+.navhead:hover{
+    color: whitesmoke;
+}
+.navlist{
+    background-color: transparent;
+
+}
 
 nav li {
     margin: 0 1rem;
@@ -46,8 +66,38 @@ nav a {
 }
 
 /* Style the sections */
-section {
-    padding: 2rem;
+
+.about{
+    display:flex;
+}
+.aboutcontent{
+    display: flex;
+    flex-direction: column;
+    flex:1.5;
+    padding: 20px;
+}
+.aboutimage{
+    flex:1;
+    background:url(images/profile.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: contain;
+}
+.stacks{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.stack{
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.stack:hover{
+    background-color: #004e92;
+    scale: 1.2;
 }
 
 h2 {
@@ -55,6 +105,25 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.footer{
+    display: flex;
+    margin-top: 40px;
+}
+.contacts{
+    flex: 1;
+}
+.form{
+    flex: 1;
+}
+.contact{
+    display: flex;
+    gap:10px;
+}
+.socials{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
 /* Style the individual projects */
 .project {
     background-color: #fff;
@@ -67,13 +136,15 @@ h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
+.send{
+    border: none;
+    background-color: rgb(190, 172, 129);
+    border-radius: 10px;
+}
 
 /* Style the footer */
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem 0;
+.footer {
+    padding: 1rem;
 }
 
 /* Make links in the navigation underline on hover */
